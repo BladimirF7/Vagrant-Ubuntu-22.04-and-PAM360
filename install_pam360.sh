@@ -37,4 +37,8 @@ sudo ufw allow 8282/tcp       # REST API (inbound)
 sudo ufw allow 8080/tcp       # Private CA-OCSP Responder Server port (inbound)
 yes | sudo ufw enable         # Enable the firewall
 
-./ManageEngine_PAM360_64bit.bin -i console silent
+./ManageEngine_PAM360_64bit.bin -i silent -f LinuxPrimaryNonMSP.txt
+
+cd /home/pam360/ManageEngine/bin/
+./pam360.sh start
+./pam360-service.sh start
