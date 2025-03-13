@@ -36,3 +36,5 @@ sudo ufw allow 6622/tcp       # SSH API (inbound)
 sudo ufw allow 8282/tcp       # REST API (inbound)
 sudo ufw allow 8080/tcp       # Private CA-OCSP Responder Server port (inbound)
 yes | sudo ufw enable         # Enable the firewall
+
+./ManageEngine_PAM360_64bit.bin -i console silent
